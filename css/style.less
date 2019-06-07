@@ -1,0 +1,193 @@
+
+@font-face{
+    font-family: 'Exo Bold';
+    src: url('../fonts/Exo-Bold.otf') format('truetype');
+  
+  }
+  @font-face{
+    font-family: 'Exo ExBold';
+    src: url('../fonts/Exo-Black.otf') format('truetype');
+  
+  }
+  @font-face{
+      font-family: 'Exo Medium';
+      src: url('../fonts/Exo-Medium.otf') format('truetype');
+    
+    }
+    @font-face{
+        font-family: 'Exo Regular';
+        src: url('../fonts/Exo-Medium.otf') format('truetype');
+      
+      }
+
+@colorDark: #405706;
+@colorSoft: #c6fa8b;
+@colorMedium: #a2da3b;
+
+@colorDarkOp: rgba(64, 87, 6, 0.7);
+@colorSoftOp: rgba(198, 250, 139, 0.7);
+@colorMediumOp: rgba(162, 218, 59, 0.7);
+@colorBlackOp: rgba(0, 0, 0, 0.7);
+
+@fontBold: 'Exo Bold';
+@fontNormal: 'Exo Regular';
+@fontTitle: 'Exo Medium';
+@fontExBold: 'Exo ExBold';
+
+h1, h2, h3, h4, h5{
+    font-family: @fontBold;
+}
+
+li, p, a{
+    font-family: @fontNormal;
+}
+
+.bg-green{
+    box-shadow: 0px 0px 6px;
+    background-color: @colorDark;
+}
+.navbar li a{
+    font-family: @fontBold;
+    color: white!important;
+    margin-left: 10px;
+}
+.navbar .active a{
+    color: @colorSoft!important;
+}
+.navbar li:hover a{
+    color: @colorSoft!important;
+}
+.main-page{
+    background: url('../img/bg-2.png') center no-repeat;
+    background-size: cover;
+    min-height: 695px;
+}
+.main-tit{
+    margin-top: 170px;
+    padding-top: 10px;
+    padding-right: 35px;
+    font-family: @fontBold;
+    width: 100%;
+    height: auto;
+    text-align: right;
+}
+
+.tentang-page{
+    padding-top: 100px;
+    background: url('../img/bg-ttg.png') top no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+.tentang-page h1{
+    font-family: @fontExBold;
+    margin-left: 100px;
+   font-size: 120px;
+   color: @colorDark;
+}
+.tentang-page h2{
+    writing-mode: sideways-lr;
+    font-size: 70px;
+    color: @colorDark;
+    
+    text-orientation: mixed;
+}
+.ttg{
+    margin-top: 80px;
+    font-size: 30px;
+}
+.ttg-bot{
+    padding-top: 130px;
+    background: url('../img/bg-ttg-bot.png') top no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    height: auto;
+    padding-left: 100px;
+    margin-bottom: 80px;
+}
+.ttg-bot ol li{
+    margin: 10px;
+    font-size: 30px;
+    list-style-image: url('../img/li-icon.png');
+}
+footer{
+    background: url('../img/foot.png') left no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+.img{
+	height: 250px;
+	width: 100%;
+}
+.frame{
+	position: relative;
+    margin-bottom: 20px;
+}
+.frame:hover .img{
+	filter: brightness(70%);
+}
+.capt{
+	height: 250px;
+	width: 100%;
+	display: none;
+	bottom: 0px;
+	background-color: @colorBlackOp;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+	position: absolute;
+	color: white;
+}
+
+.galery-post{
+    background-color: @colorBlackOp;
+    height: 250px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.galery-post{
+    color: @colorMedium;
+}
+
+.gallery{
+    background: url('../img/bg-gal.png') top no-repeat;
+    background-size: cover;
+    padding-top: 60px;
+    
+}
+.gallery h1{
+    color: @colorDark;
+    text-align: center;
+}
+.peta{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.text-rl{
+    writing-mode: sideways-lr;
+    color: @colorDark;    
+    font-family: @fontExBold;
+    text-orientation: mixed;
+    text-align: right;
+}
+.text-rl .satu{
+    font-size: 40px;
+}
+.text-rl .dua{
+    font-size: 25px;
+}
+.profil-taman{
+    padding: 20px;
+}
+.pt-head{
+    background-color: @colorDark;
+    color: white;
+    padding: 10px;
+}
+.pt-body{
+    border: 1px solid @colorDark;
+    min-height: 400px;
+    height: auto;
+    padding: 10px;
+}
